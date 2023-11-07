@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Pawar A6</title>
+    <title>Three-Part Form</title>
+
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+        
 </head>
 <body>
-    <header>
-        <h1>David Pawar</h1>
-    </header>
-    <form>
-        <div class="form-group">
-            <label for="fullName">Full Name <span class="asterisk">*</span></label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address<span class="asterisk">*</span></label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number<span class="asterisk">*</span></label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message<span class="asterisk">*</span></label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="checkbox">For Yes Mark It, Otherwise Not</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
-        <button type="submit" id="submit" >Submit</button>
-    </form>
-</body>
-</html>
+    <h1>David Pawar </h1>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
 
+            <div class="swiper-slide">
+                <form id="personal-info">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br>
+                </form>
+            </div>
+        
+            <div class="swiper-slide">
+                <form id="contact-info">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea><br>
+                </form>
+            </div>
+            <!-- Payment Information Section -->
+            <div class="swiper-slide">
+                <form id="payment-info">
+                    <label for="ccn">Credit Card Number:</label>
+                    <input type="text" id="ccn" name="ccn" required><br>
+                    <label for="exp-date">Expiration Date:</label>
+                    <input type="date" id="exp-date" name="exp-date" required><br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required><br>
+                </form>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    
 </body>
 </html>
