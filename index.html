@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inventory Website</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Pawar A6</title>
-    <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <h1>David Pawar</h1>
-    </header>
-    <form>
-        <div class="form-group">
-            <label for="fullName">Full Name <span class="asterisk">*</span></label>
-            <input type="text" id="fullName" name="fullName" required>
+
+  <!-- Requirement-1: created website using bootstrap technology and bootstrap grid layout-->
+  <!-- Requirement-2: adding my name-->
+  <header>
+    <h1>David Pawar</h1>
+  </header>
+
+  <!-- Requirement-3: adding an electronic device's image   -->
+  <div class="container ">
+    <img src="ipad.png" class="img-fluid mx-auto d-block" alt="Electronic Product">
+    <p class="caption">Latest Ipad 11 inch with Apple M2 chip</p>
+  </div>
+
+  <!-- Requirement-4:  a table with three items-->
+  <div class="tabform">
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ipad Pro 11 inch</td>
+          <td>$1099 or $94.07/mo for 12 months</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Ipad Pro 12.9 inch</td>
+          <td>$1499 or $128.31/mo for 12 months</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Ipad Air</td>
+          <td>$799 or $68.39/mo for 12 months</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Requirement-5 : Form with asked labels -->
+  <div class="container mt-5 ">
+    <form class="form">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <select class="form-control" id="productName">
+            <option value="IpadPro11">  Ipad Pro 11 inches</option>
+            <option value="IpadPro12">  Ipad Pro 12.9 inches</option>
+            <option value="IpadAir">  Ipad Air</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Would you like to order</label>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="orderSwitch" name="orderSwitch">
+          <label class="custom-control-label" for="orderSwitch"></label>
         </div>
-        <div class="form-group">
-            <label for="email">Email Address<span class="asterisk">*</span></label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number<span class="asterisk">*</span></label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message<span class="asterisk">*</span></label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="checkbox">Mark It For Yes, Otherwise Left Blank</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
-        <button type="submit" id="submit" >Submit</button>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="range" class="form-control-range" id="quantity" min="1" max="100">
+      </div>
     </form>
-</body>
-</html>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
