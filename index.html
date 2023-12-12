@@ -1,40 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Pawar A6</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <h1>David Pawar</h1>
-    </header>
-    <form>
-        <div class="form-group">
-            <label for="fullName">Full Name <span class="asterisk">*</span></label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address<span class="asterisk">*</span></label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number<span class="asterisk">*</span></label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message<span class="asterisk">*</span></label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="checkbox">Mark It For Yes, Otherwise Left Blank</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
-        <button type="submit" id="submit" >Submit</button>
-    </form>
-</body>
-</html>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css"></head>
+<body>
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-success" id="navbar">
+    <a class="navbar-brand" href="#">LinkedIn</a>
+    <div class="collapse container navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav row mx-auto">
+            <li class="nav-item col-sm">
+                <a class="nav-link" href="#home"><i class="bi bi-house-door"></i></a>
+            </li>
+        
+            <li class="nav-item col-sm">
+                <a class="nav-link" href="#notification"><i class="bi bi-bell"></i></a>
+            </li>
+        
+      
+            <li class="nav-item col-sm">
+                <a class="nav-link" href="#profile"><i class="bi bi-person"></i></a>
+            </li>
+
+           
+        </ul>
+    </div>
+</nav>
+    <div class="name">
+        <h1 class="text-center mt-3 text-success nameBG">David Pawar's LinkedIn</h1>
+    </div>
+
+    <div class="container border border-success">
+        <p class="news alert alert-primary mt-3" role="alert"">News-1 :Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eum architecto minima accusantium cumque officia, officiis voluptatum exercitationem quod neque?  <span><A href="#">Read More</A></span></p>
+        <p class="news alert alert-primary">News-2 :Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eum architecto minima accusantium cumque officia, officiis voluptatum exercitationem quod neque?'<span><A href="#">Read More</A></span></p>
+        <p class="news alert alert-success">Job Posting :Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eum architecto minima accusantium cumque officia, officiis voluptatum exercitationem quod neque? <span><A href="#">Click To Apply</A></span></p>
+
+    </div>
+<div class="modals">
+<button type="button" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Moadara(Modal-1)
+  </button>
+  
+ 
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1> -->
+          <img src="imgs/madara.jpeg" alt="Madara's image" id="madara">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Madara, the legend shinobi.
+        </div>
+        <div class="modal-footer">
+            <p> <strong>TimeStamp: </strong>2023-12-12 1634</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Jiraiya (Modal-2)
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="imgs/jiraiya.jpeg" alt="Jairaya's  image" id="jiraiya">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Master Jiraiya
+        </div>
+        <div class="modal-footer">
+            <p> <strong>TimeStamp: </strong>2023-12-12 1635</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#example">
+    Naruto (Modal-3)
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <img src="imgs/naruto.jpeg" alt="" id="naruto">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Naruto- 7th Hokage
+        </div>
+        <div class="modal-footer">
+            <p> <strong>TimeStamp: </strong>2023-12-12 1637</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  </div>
+      <div class="form">
+        <form>
+            <div class="fullName">
+                <label for="fullName">Full Name: <span class="asterisk">*</span></label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="DOB">
+                <label for="DOB">Date of Birth: <span class="asterisk">*</span></label>
+                <input type="text" id="DOB" name="DOB" required>
+            </div>
+            <div class="form">
+                <label for="phone">Phone Number: <span class="asterisk">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+          <div class="form">
+                <label for="zip">Zip Code: <span class="asterisk">*</span></label>
+                <input type="tel" id="zip" name="zip" required>
+            </div>
+            <div class="Email">
+                <label for="email">Email Address: <span class="asterisk">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+           
+            <div class="checkbox">
+                <label for="checkbox">I agree to this David Pawar's LinkedIn's <a>Privacy Policy</a></label>
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+            </div>
+            <button type="submit" id="submit" >Submit</button>
+        </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
 </body>
 </html>

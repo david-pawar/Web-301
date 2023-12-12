@@ -1,10 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
 }
+.threeIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.nameBG {
+    background-color: rgb(223, 248, 223);
+}
 @media (max-width: 600px) {
     *{
         padding: 0;
@@ -90,4 +96,17 @@ button {
     /* margin-left: 67%; */
     margin: auto;
 
+}
+
+#madara{
+    height: 200px;
+    width: auto;
+}
+#jiraiya{
+    height: 200px;
+    width: auto;
+}
+#naruto{
+    height: 200px;
+    width: auto;
 }
