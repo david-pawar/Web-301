@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Pawar A6</title>
+    <title>David's Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <header>
-        <h1>David Pawar</h1>
+
+<body data-spy="scroll" data-target=".row" data-offset="70">
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#">David's Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownShop">
+                        <a class="dropdown-item" href="#">Men</a>
+                        <a class="dropdown-item" href="#">Women</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Search Bar -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Header Section with Bootstrap colors -->
+    <header id="home" class="bg-primary text-white text-center py-5">
+        <h1 class="text-dark">David Pawar</h1>
     </header>
-    <form>
-        <div class="form-group">
-            <label for="fullName">Full Name <span class="asterisk">*</span></label>
-            <input type="text" id="fullName" name="fullName" required>
+
+    <!-- About Section -->
+ 
+        
+    </div>
+    <div id="about" class="container mt-4 ">
+    
+        <div class="col" >
+                <div id="section1" class="col-md-12 ">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis ad itaque consequuntur quibusdam iste unde delectus saepe aliquam ducimus? Et quidem blanditiis harum fugit iste consequatur ullam odio deserunt amet animi? Obcaecati praesentium sapiente incidunt vero, repudiandae, officiis porro laboriosam provident ipsum ex, nulla cumque! Quia nesciunt nemo minima fuga corrupti? Cupiditate autem ipsum quam itaque adipisci assumenda temporibus consectetur, et libero, fuga corrupti voluptas est! Nam voluptatem excepturi asperiores blanditiis iste amet qui repudiandae officia! At, veniam inventore? Placeat, asperiores distinctio! Reiciendis ullam, assumenda consequatur cupiditate explicabo sint. Illum dolorum laboriosam accusantium eum explicabo nisi! Sint id ea quod omnis odit odio laboriosam, soluta dignissimos vel corrupti adipisci facere, quis voluptatum assumenda quidem, sit cumque blanditiis nulla culpa dolorem quo voluptatem perferendis. Eos, voluptatem quisquam neque ratione dolorem sapiente ipsa, nisi numquam consequatur quod voluptas veniam ab deleniti facilis corporis voluptate rem minus iure, necessitatibus corrupti ad eligendi. Totam soluta, fuga ut quibusdam itaque enim quaerat suscipit voluptatem. Porro, modi suscipit? Dolorem, blanditiis nulla quaerat omnis ratione voluptatibus, repudiandae laborum magni, qui tenetur fuga. Libero sequi omnis dicta quasi repudiandae illo odit nam alias voluptas praesentium? Ab, eos. Aspernatur, nemo. Saepe ea rerum, tenetur suscipit esse debitis sunt?</p>
+                </div>
+            <div id="section2" class="col-md-12">
+                <h2>Our Mission</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias at magni enim officia perferendis delectus velit fuga voluptatem, quasi sit corrupti illum veniam nisi cum dignissimos sint soluta temporibus expedita libero maiores voluptate distinctio tempora? Quas, quae laboriosam fugiat, deserunt quisquam beatae voluptatum cupiditate praesentium ipsum officiis, iure placeat esse veniam perspiciatis pariatur. Non sapiente rem a perferendis eius et sint similique ex natus dolorum quas neque magnam eveniet asperiores possimus voluptatum dolorem quisquam est nam molestias, atque aperiam eos! Vero, fugiat? Aliquam, sint fuga! Aliquam exercitationem dignissimos error natus porro. Laboriosam iste ut cumque commodi animi aliquid esse quo voluptate minima totam culpa, beatae ex. Facilis, repellendus! Quisquam voluptatem eaque, delectus corporis at reprehenderit dolor voluptates, in similique facere id obcaecati eveniet tenetur incidunt pariatur. Tempora nulla eos dolorum! Blanditiis officia hic temporibus ut porro ad rem cum similique sit rerum. Veniam corrupti optio, animi laudantium saepe laboriosam aut quibusdam. Numquam, porro dolor! Iusto quis provident optio quaerat sed unde accusantium corrupti facilis dolores quibusdam, quae odio laboriosam sequi amet quia, ex numquam maiores. Adipisci, voluptatem, quod accusantium reprehenderit excepturi nostrum aliquam cum consequatur unde necessitatibus modi quos soluta sint quibusdam hic molestias officiis magnam, dolorum consectetur. Magnam, facilis!.</p>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email Address<span class="asterisk">*</span></label>
-            <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Product Section with Bootstrap cards -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Long Coat</h5>
+                        <p class="card-text">Price: $149.95</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tshirt and Sweater</h5>
+                        <p class="card-text">Price: $84.95</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Short Coat</h5>
+                        <p class="card-text">Price: $95.95</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="phone">Phone Number<span class="asterisk">*</span></label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message<span class="asterisk">*</span></label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="checkbox">Mark It For Yes, Otherwise Left Blank</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
-        <button type="submit" id="submit" >Submit</button>
-    </form>
-</body>
-</html>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Add scrollspy to <body>
+        $('body').scrollspy({ target: '#navbar', offset: 70 });
+    </script>
 
 </body>
+
 </html>
